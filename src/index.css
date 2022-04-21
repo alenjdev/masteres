@@ -1,6 +1,10 @@
 * {
   font-family: "Work Sans", sans-serif;
-  overflow: hidden;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {

@@ -1,5 +1,4 @@
 import { Component, ReactNode } from "react";
-import styles from "./index.module.scss";
 import RosTopicStats from "../../types/RosTopicStats";
 import moduleConfig from "../../config/moduleConfig";
 import { Table } from "./Table";
@@ -35,7 +34,7 @@ export class TableComponent extends Component<ITableProps> {
                     content={content.name}
                     type={
                       _.title === "other"
-                        ? "unknown"
+                        ? "good"
                         : minHzForTopic(content.name) <= content.hz
                         ? "good"
                         : "bad"
